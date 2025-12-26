@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/alex/Documents/MainSys/BookReviews.Domain/BookReviews.Domain.csproj": {}
+    "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj": {}
   },
   "projects": {
-    "/home/alex/Documents/MainSys/BookReviews.Domain/BookReviews.Domain.csproj": {
+    "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alex/Documents/MainSys/BookReviews.Domain/BookReviews.Domain.csproj",
+        "projectUniqueName": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj",
         "projectName": "BookReviews.Domain",
-        "projectPath": "/home/alex/Documents/MainSys/BookReviews.Domain/BookReviews.Domain.csproj",
+        "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj",
         "packagesPath": "/home/alex/.nuget/packages/",
-        "outputPath": "/home/alex/Documents/MainSys/BookReviews.Domain/obj/",
+        "outputPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/alex/.nuget/NuGet/NuGet.Config"

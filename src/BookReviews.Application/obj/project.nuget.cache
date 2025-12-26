@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A2HUfYvjnKKa+PAB44sNVLDdnwQGamL8i2O3lBjOiK4bB+l7To7WwTI6zuS8kuN0iow+5dOMh/zIo4gccgbMKA==",
+  "dgSpecHash": "FrVO//oEvM1JaheqeXM7x4T1gsuBwGix+lnujwK7o0z6FGMayel8p7cGYbBpqTF9FuicBDJxRvNwUh5XfHlK2g==",
   "success": true,
-  "projectFilePath": "/home/alex/Documents/MainSys/BookReviews.Application/BookReviews.Application.csproj",
+  "projectFilePath": "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

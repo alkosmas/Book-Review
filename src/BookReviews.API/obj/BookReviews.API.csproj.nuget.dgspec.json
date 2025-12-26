@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/alex/Documents/MainSys/BookReviews.API/BookReviews.API.csproj": {}
+    "/home/alex/Documents/MainSys/src/BookReviews.API/BookReviews.API.csproj": {}
   },
   "projects": {
-    "/home/alex/Documents/MainSys/BookReviews.API/BookReviews.API.csproj": {
+    "/home/alex/Documents/MainSys/src/BookReviews.API/BookReviews.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alex/Documents/MainSys/BookReviews.API/BookReviews.API.csproj",
+        "projectUniqueName": "/home/alex/Documents/MainSys/src/BookReviews.API/BookReviews.API.csproj",
         "projectName": "BookReviews.API",
-        "projectPath": "/home/alex/Documents/MainSys/BookReviews.API/BookReviews.API.csproj",
+        "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.API/BookReviews.API.csproj",
         "packagesPath": "/home/alex/.nuget/packages/",
-        "outputPath": "/home/alex/Documents/MainSys/BookReviews.API/obj/",
+        "outputPath": "/home/alex/Documents/MainSys/src/BookReviews.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/alex/.nuget/NuGet/NuGet.Config"
@@ -25,7 +25,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj": {
+                "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj"
+              },
+              "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/BookReviews.Infrastructure.csproj": {
+                "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/BookReviews.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +69,176 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj",
+        "projectName": "BookReviews.Application",
+        "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj",
+        "packagesPath": "/home/alex/.nuget/packages/",
+        "outputPath": "/home/alex/Documents/MainSys/src/BookReviews.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj": {
+                "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj",
+        "projectName": "BookReviews.Domain",
+        "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj",
+        "packagesPath": "/home/alex/.nuget/packages/",
+        "outputPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/BookReviews.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/BookReviews.Infrastructure.csproj",
+        "projectName": "BookReviews.Infrastructure",
+        "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/BookReviews.Infrastructure.csproj",
+        "packagesPath": "/home/alex/.nuget/packages/",
+        "outputPath": "/home/alex/Documents/MainSys/src/BookReviews.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj": {
+                "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Application/BookReviews.Application.csproj"
+              },
+              "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj": {
+                "projectPath": "/home/alex/Documents/MainSys/src/BookReviews.Domain/BookReviews.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

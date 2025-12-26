@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PB9KJBgYaRsCqgERhZGuGk78m9+BnQMmyYd5iaaA+QG8N+f3Wftjz5A5fwiT5bLOqpVSCA6Jd5Nwvu7I7OmABw==",
+  "dgSpecHash": "qn1IXVzSwUri2h95EX1nQM4l7yDBZj8oGCwEnmTNG1sQIULeNmsaE5VMZLQhHwSnKU+GjT4sfARhdwN3khciQg==",
   "success": true,
-  "projectFilePath": "/home/alex/Documents/MainSys/BookReviews.API/BookReviews.API.csproj",
+  "projectFilePath": "/home/alex/Documents/MainSys/src/BookReviews.API/BookReviews.API.csproj",
   "expectedPackageFiles": [
     "/home/alex/.nuget/packages/microsoft.aspnetcore.openapi/8.0.22/microsoft.aspnetcore.openapi.8.0.22.nupkg.sha512",
     "/home/alex/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
