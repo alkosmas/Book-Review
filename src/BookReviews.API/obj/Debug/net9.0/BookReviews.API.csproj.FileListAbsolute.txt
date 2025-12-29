@@ -133,3 +133,15 @@
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/MediatR.dll
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/MediatR.Contracts.dll
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/FluentValidation.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Configuration.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll

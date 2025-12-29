@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace BookReviews.Application.Features.Auth.Commands.Register
 {
-    public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Guid>
+    public class RegisterCommandHandler : IRequestHandler<RegisterCommand,Guid>
     {
         private readonly IAuthService _authService;
 
@@ -16,10 +16,11 @@ namespace BookReviews.Application.Features.Auth.Commands.Register
         public async Task<Guid> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
             return await _authService.RegisterAsync(
-                request.Email, 
-                request.Username, 
+                request.Email,
+                request.Username,
                 request.Password
             );
         }
+        
     }
 }

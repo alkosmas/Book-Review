@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using BookReviews.Application.Common.Interfaces;
+using BookReviews.Domain.Settings;
 using BookReviews.Infrastructure.Identity;
 using BookReviews.Infrastructure.Persistence;
 
@@ -24,6 +25,8 @@ namespace BookReviews.Infrastructure.Registration
                 
             services.AddTransient<IAuthService, AuthService>();
 
+            var jwtSection = configuration.GetSection("JwtSettings");
+            services.Configure<JwtSettings>(jwtSection);
             return services;
         }
     }
