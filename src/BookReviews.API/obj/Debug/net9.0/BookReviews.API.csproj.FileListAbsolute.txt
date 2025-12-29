@@ -132,10 +132,4 @@
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/MediatR.dll
 /home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/MediatR.Contracts.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
-/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/System.Diagnostics.DiagnosticSource.dll
+/home/alex/Documents/MainSys/src/BookReviews.API/bin/Debug/net9.0/FluentValidation.dll

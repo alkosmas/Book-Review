@@ -3,24 +3,18 @@ using Microsoft.AspNetCore.Identity;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using BookReviews.Infrastructure.Persistence;
 using BookReviews.Infrastructure.Identity;
-using BookReviews.Application;
+using BookReviews.Application.Registration;
+using BookReviews.Infrastructure.Registration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-//Database
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//Identity
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>()
-    .AddDefaultTokenProviders();
 
 //Controllers 
 builder.Services.AddControllers();
-
 builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 //Swagger
 builder.Services.AddEndpointsApiExplorer();

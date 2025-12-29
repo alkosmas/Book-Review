@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BookReviews.Application
+namespace BookReviews.Application.Registration
 {
     public static class ApplicationServiceRegistration
     {
