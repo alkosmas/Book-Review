@@ -25,7 +25,6 @@ namespace BookReviews.Infrastructure.Identity
         }
 
 
-
         public async Task<Guid> RegisterAsync(string email, string username, string password)
         {
             var existingUser = await _userManager.FindByEmailAsync(email);
