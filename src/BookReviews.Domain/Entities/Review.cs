@@ -13,7 +13,7 @@ namespace BookReviews.Domain.Entities
         public string UserId { get; set; } = string.Empty;
         public Book Book { get; set; } = null!;
         public IUser User { get; set; } = null!;
-        public ICollection<ReviewVote> ReviewVotes = new List<ReviewVote>();
+        public ICollection<ReviewVote> ReviewVotes { get; set; } = new List<ReviewVote>();
     }
 }
 

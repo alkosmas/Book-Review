@@ -18,7 +18,6 @@ namespace BookReviews.Application.Features.Reviews.Queries.GetReviewsByBookId
         {
             return await _context.Reviews
                 .Where(r => r.BookId == request.BookId)
-                .Include(r => r.User) 
                 .Include(r => r.ReviewVotes) 
                 .Select(r => new ReviewDto
                 {
@@ -26,7 +25,7 @@ namespace BookReviews.Application.Features.Reviews.Queries.GetReviewsByBookId
                     Content = r.Content,
                     Rating = r.Rating,
                     CreatedAt = r.CreatedAt,
-                    UserName = r.User.UserName ?? "Unknown",
+                    UserName = "User_" + r.UserId.Substring(0, Math.Min(8, r.UserId.Length)),
                     Likes = r.ReviewVotes.Count(v => v.IsUpVote),
                     Dislikes = r.ReviewVotes.Count(v => !v.IsUpVote)
                 })
