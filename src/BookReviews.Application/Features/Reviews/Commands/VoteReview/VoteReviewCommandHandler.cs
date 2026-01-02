@@ -20,7 +20,9 @@ namespace BookReviews.Application.Features.Reviews.Commands.VoteReview
         public async Task Handle(VoteReviewCommand request, CancellationToken cancellationToken)
         {
             var userId = _currentUserService.UserId;
-            if (userId == null) throw new UnauthorizedException("User not authenticated");
+
+            if (userId == null)
+             throw new UnauthorizedException("User not authenticated");
 
             var reviewExists = await _context.Reviews
                 .AnyAsync(r => r.Id == request.ReviewId, cancellationToken);
@@ -36,7 +38,8 @@ namespace BookReviews.Application.Features.Reviews.Commands.VoteReview
             if (existingVote != null)
             {
                 existingVote.IsUpVote = request.IsUpVote;
-                if (existingVote.IsDeleted) existingVote.IsDeleted = false;
+                if (existingVote.IsDeleted) 
+                    existingVote.IsDeleted = false;
             }
             else
             {
