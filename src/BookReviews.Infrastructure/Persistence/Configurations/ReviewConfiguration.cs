@@ -15,8 +15,6 @@ namespace BookReviews.Infrastructure.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(2000);
 
-            builder.Ignore(x => x.User);
-
             builder.HasOne<ApplicationUser>()
                 .WithMany()
                 .HasForeignKey(x => x.UserId);

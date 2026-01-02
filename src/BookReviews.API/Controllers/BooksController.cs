@@ -11,7 +11,6 @@ using BookReviews.Application.Features.Books.Commands.DeleteBook;
 
 [Route("api/[controller]")]
 [ApiController]
-
 public class BooksController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -20,7 +19,8 @@ public class BooksController : ControllerBase
     {
         _mediator = mediator;
     }
-
+    
+    [Authorize]
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateBookCommand command)
     {
@@ -28,7 +28,7 @@ public class BooksController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id }, id);
     }
     
-
+  
     [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] GetBooksQuery query)
     {
@@ -44,6 +44,7 @@ public class BooksController : ControllerBase
         return Ok(result);
     }
 
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] UpdateBookCommand command)
     {
@@ -54,6 +55,8 @@ public class BooksController : ControllerBase
             await _mediator.Send(command);
             return NoContent(); 
     }
+    
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

@@ -37,12 +37,17 @@ namespace BookReviews.Application.Features.Books.Queries.GetBooks
                 query = query.Where(b => b.Genre == request.Genre);
             }
 
+           /* if (request.PublishedYear.HasValue)
+            {
+                query = query.Where(b => b.PublishedYear == request.PublishedYear.Value);
+            }*/
+
             var totalCount = await query.CountAsync(cancellationToken);
 
             var items = await query
                 .Skip((request.PageNumber - 1) * request.PageSize)
                 .Take(request.PageSize)
-                .ProjectToType<BookDto>() // 
+                .ProjectToType<BookDto>()
                 .ToListAsync(cancellationToken);
 
             return new PagedResponse<BookDto>(items, totalCount, request.PageNumber, request.PageSize);
